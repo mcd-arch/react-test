@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client'
 
 const h1 = <h1 id="title">Hello React.js</h1>
 
+let a = 10
+let b = `jfgjdlgdjlfgl`
+
 const list = (
     <ul>
-        <li>list item 1</li>
-        <li>list item 2</li>
+        <li>list item {a}</li>
+        <li>list item {b}</li>
         <li>list item 3</li>
     </ul>
 )

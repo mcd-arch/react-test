@@ -23,7 +23,7 @@ const content = (
     </div>
 )*/
 
-interface ITitleProps {
+/*interface ITitleProps {
     text: string
 }
 
@@ -56,4 +56,7 @@ root.render(
     <React.StrictMode>
         <App></App>
     </React.StrictMode>
-)
+)*/
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+root.render(<React.StrictMode></React.StrictMode>)

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Content from './Content'
+import { ContentNamed } from './Content_named'
 
 /*const h1 = <h1 id="title">Hello React.js</h1>
 

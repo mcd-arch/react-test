@@ -21,25 +21,27 @@ const content = (
     </div>
 )*/
 
-const Title = () => {
-    return <h1>Hello App</h1>
+interface ITitleProps {
+    text: string
 }
 
-const Content = () => {
+type ContentProps = {
+    text1: string
+    text2: string
+    year: number
+}
+
+const Title = (props: ITitleProps) => {
+    console.log(props)
+    return <h1>Hello {props.text}</h1>
+}
+
+const Content = (props: ContentProps) => {
     return (
         <React.Fragment>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                libero sapiente nesciunt nemo debitis consequatur culpa nisi
-                dolorum enim cumque, ipsa perspiciatis quam natus tempora earum
-                voluptatum? Veniam, molestiae voluptatum.
-            </p>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-                delectus deleniti quo, eos in rem accusantium, nemo assumenda
-                consequuntur voluptatum distinctio repellat, ipsam sapiente
-                blanditiis consectetur dicta quas ea cum!
-            </p>
+            <p>{props.text1}</p>
+            <p>{props.text2}</p>
+            <div>Year: {props.year}</div>
         </React.Fragment>
     )
 }
@@ -47,8 +49,9 @@ const Content = () => {
 function App() {
     return (
         <>
-            <Title></Title>
-            <Content></Content>
+            <Title text="React"></Title>
+            <Title text="TS"></Title>
+            <Content text1="howdey" text2="Hello world" year={2023}></Content>
         </>
     )
 }

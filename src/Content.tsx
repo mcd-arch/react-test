@@ -1,4 +1,4 @@
-import './Content.css'
+import classes from './Content.module.css'
 
 type Props = {
     text1: string
@@ -9,7 +9,7 @@ type Props = {
 const Content = (props: Props) => {
     return (
         <>
-            <p className="content">{props.text1}</p>
+            <p className={`${classes.text}`}>{props.text1}</p>
             <p
                 style={{
                     margin: '20px',

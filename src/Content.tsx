@@ -1,3 +1,5 @@
+import './Content.css'
+
 type Props = {
     text1: string
     text2: string
@@ -7,8 +9,14 @@ type Props = {
 const Content = (props: Props) => {
     return (
         <>
-            <p>{props.text1}</p>
-            <p>{props.text2}</p>
+            <p className="content">{props.text1}</p>
+            <p
+                style={{
+                    margin: '20px',
+                }}
+            >
+                {props.text2}
+            </p>
             <div>Year: {props.year}</div>
         </>
     )

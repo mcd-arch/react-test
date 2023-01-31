@@ -38,10 +38,15 @@ function App() {
             <Title text="React"></Title>
             <Title text="TS"></Title>
             <Content
-                text1={'howdey'}
+                text1={'loremdgjsjsjsdjdjdjaj'}
                 text2={'Hello world'}
                 year={2023}
             ></Content>
+            <ContentNamed
+                text1={'qqq'}
+                text2={'www'}
+                year={2023}
+            ></ContentNamed>
         </>
     )
 }

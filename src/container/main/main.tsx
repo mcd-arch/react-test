@@ -1,5 +1,5 @@
 type Props = {}
-const main = (props: Props) => {
+const Main = (props: Props) => {
     return <div>main</div>
 }
-export default main
+export default Main

@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Content from './Content'
-import { ContentNamed } from './Content_named'
+//import Content from './Content'
+//import { ContentNamed } from './Content_named'
+import App from './container/App/App'
 
 /*const h1 = <h1 id="title">Hello React.js</h1>
 
@@ -30,9 +31,9 @@ const content = (
 const Title = (props: ITitleProps) => {
     console.log(props)
     return <h1>Hello {props.text}</h1>
-}
+}*/
 
-function App() {
+/*function App() {
     return (
         <>
             <Title text="React"></Title>
@@ -49,9 +50,9 @@ function App() {
             ></ContentNamed>
         </>
     )
-}
+}*/
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+/*const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
         <App></App>
@@ -59,4 +60,8 @@ root.render(
 )*/
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-root.render(<React.StrictMode></React.StrictMode>)
+root.render(
+    <React.StrictMode>
+        <App></App>
+    </React.StrictMode>
+)

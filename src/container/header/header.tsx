@@ -1,5 +1,5 @@
 type Props = {}
 const Header = (props: Props) => {
-    return <div>header</div>
+    return <div>Header</div>
 }
 export default Header
